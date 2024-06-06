@@ -1,0 +1,14 @@
+GET http://localhost:3001/ 
+###
+GET http://localhost:3001/question?theme=Science%20sociale&niveau=facile
+###
+
+POST http://localhost:3001/users
+Content-Type: "application/json"
+Accept: "application/json"
+
+{
+    "nom":"halleg",
+    "email":"halleg@gmail",
+    "password":"1234"
+}

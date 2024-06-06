@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Theme</title>
+    <link rel="stylesheet" href="chox.css" />
+  </head>
+  <body>
+    <header>QUIZ</header>
+    <main>
+      <div class="form-container">
+        <form id="quizForm">
+          <div class="form-group">
+            <label for="Theme">Choose a Theme:</label>
+            <select name="Theme" id="Theme">
+              <!-- Options go here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="difficulte">Choose the difficulty:</label>
+            <select name="difficulte" id="difficulte">
+              <option value="facile">Easy</option>
+              <option value="intermediaire">Medium</option>
+              <option value="difficile">Hard</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nb_questions"
+              >Enter the number of questions (<10):</label
+            >
+            <input id="nb_questions" type="number" required max="10" />
+          </div>
+          <button type="submit">Start Quiz</button>
+        </form>
+      </div>
+    </main>
+    <footer><script src="services/quizForm.js"></script></footer>
+  </body>
+</html>

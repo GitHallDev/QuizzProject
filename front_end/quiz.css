@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+/* Question and Answer Styles */
+.bigdiv {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bigdiv > div {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.bigdiv p {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  transition: box-shadow 0.3s;
+}
+
+.bigdiv p:hover {
+  /*box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
+  box-shadow: rgba(46, 240, 88, 0.4) 5px 5px, rgba(46, 240, 75, 0.3) 10px 10px,
+    rgba(46, 240, 85, 0.2) 15px 15px, rgba(46, 240, 78, 0.1) 20px 20px,
+    rgba(59, 240, 46, 0.05) 25px 25px;
+}
+
+.bigdiv p.choix {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Result and Correction Styles */
+.results {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.question {
+  margin: 20px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.question p {
+  margin: 5px 0;
+}
+
+/* Correction Styles */
+.question p.correct {
+  background-color: lightgreen;
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.question p.incorrect {
+  background-color: lightcoral;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 10px;
+}
