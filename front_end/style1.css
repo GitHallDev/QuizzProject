@@ -1,26 +1,55 @@
-* {
-  color: black;
-  font-family: "Quicksand", sans-serif;
+/* style2.css */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f6A9A9; /* Fond sombre pour un look minimaliste */
+  color: #f4f4f9; /* Texte blanc pour contraster avec le fond */
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #f4f4f9; /* Un ton légèrement plus clair que le fond du corps */
+  color: #f6A9A9; /* Gris clair pour le texte */
+  padding: 20px;
   text-align: center;
-  background: rgb(186, 241, 186);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh; /* Hauteur minimale pour centrer le contenu */
+}
+
 h1 {
+  font-size: 3rem; /* Taille de police plus grande pour le titre */
+  margin-bottom: 50px;
 }
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(46, 65, 60);
-}
+
 button {
-  border: 1px rgb(20, 20, 19) solid;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 3px 15px;
-  transition: box-shadow 0.3s;
+  background-color: transparent; /* Boutons transparents pour un style épuré */
+  border: 2px solid #f4f4f9; /* Bordure blanche */
+  border-radius: 25px; /* Boutons arrondis */
+  color: #f4f4f9;
+  font-size: 1.2rem;
+  margin: 10px;
+  padding: 10px 30px;
+  text-transform: uppercase; /* Texte en majuscules */
+  transition: all 0.3s ease;
 }
+
 button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #ffcc5c; /* Changement de couleur au survol */
+  color: #f4f4f9;
 }
+
+button a {
+  color: inherit; /* Hérite la couleur du bouton */
+  text-decoration: none; /* Pas de soulignement */
+}
+
+/* Ajoutez des médias queries pour la réactivité si nécessaire */
