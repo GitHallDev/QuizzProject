@@ -11,7 +11,7 @@ public class DatabaseConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver"); // Utilisez le pilote MySQL 8
             Connection conn = DriverManager.getConnection(urlBDD, user, passwd);
-            System.out.println("Connexion réussie !");
+            //System.out.println("Connexion réussie !");
             return conn;
         } catch (ClassNotFoundException e) {
             System.out.println("Erreur : Pilote introuvable.");

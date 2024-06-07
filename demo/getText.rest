@@ -12,3 +12,7 @@ Accept: "application/json"
     "email":"halleg@gmail",
     "password":"1234"
 }
+###
+GET http://localhost:3001/wikipedia/Java%20programming%20language 
+###
+GET  http://localhost:3001/allQuestions
