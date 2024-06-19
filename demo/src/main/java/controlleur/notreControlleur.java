@@ -2,9 +2,6 @@ package controlleur;
 
 import java.util.ArrayList;
 
-import com.mysql.cj.protocol.Resultset;
-
-import dataBase.*;
 
 import java.security.NoSuchAlgorithmException;
 //import org.eclipse.jetty.io.Connection;
